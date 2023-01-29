@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input
+        {
+            margin-left: 3px;
+            border: 2px solid gray;
+            border-radius: 6px;
+            padding: 6px;
+        }
+        textarea
+        {
+            margin-left: 3px;   
+            border: 2px solid gray;
+            border-radius: 6px;
+
+        }
+        select
+        {
+            margin-left: 3px;
+            border: 2px solid gray;
+            border-radius: 6px;
+
+        }
+        #gen1,#gen2
+        {
+            position: relative;
+            text-align: center;
+            top: 2px;
+            margin: 0px 0px 0px 55px;
+        }
+        .forms
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn
+        {
+            padding: 6px 70px 6px 70px;
+            border-radius: 10px;
+        }
+        #btn:hover
+        {
+            border: 3px solid greenyellow;
+            box-shadow: 3px 3px 10px greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="forms">
+        <form action="form1.php" method="post">
+            <div class="fnm">
+
+                First name:<input type="text" name="txtName" >
+    
+            </div>
+            <br>
+            Email:<input type="text" name="txtEmail">
+            <br>
+            <br>
+            phno: <input type="number"  name="txtPhone">
+            <br>
+            <br>
+            Address:
+            <textarea name="Address" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            COURSE: 
+            <select name="course">
+                <option value="un">COURSE</option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="EC">EC</option>
+                <option value="EE">EEE</option>
+                <option value="MEC">MECHANICAL</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+            <br>
+            <br>
+            Gender:
+            <br>
+            
+            <input type="radio" name="gender" value="Male" id="gen1">Male
+            <br>
+            <input type="radio" name="gender" value="Female" id="gen2">Female
+            <br>
+            <br>
+            <button id="btn">SUBMIT</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="con">
+        <div class="sb" id="sb">
+            <nav>
+                <ul>
+                    <li>
+                        
+                        <a id="sbop">
+                            <span class="material-symbols-outlined" id="menu">
+                                menu
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        
+                        <a href="home.html">
+                            <span class="material-symbols-outlined">
+                                home
+                            </span><label class="lab"> HOME</label> 
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li>
+                        <a href="resume.html">  
+                            <span class="material-symbols-outlined">
+                                list_alt
+                            </span><label  class="lab"> RESUME</label> 
+                        </a>
+                    </li>
+
+                    
+                    
+                    <li>
+                        <a href="blog.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span><label class="lab">BLOG</label> 
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cm.html"> 
+                            <span class="material-symbols-outlined">
+                                contacts
+                            </span><label class="lab"> CONTACT ME</label>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ref.html"> 
+                            <span class="material-symbols-outlined">
+                                filter_none
+                            </span><label class="lab"> REFRENCES</label>
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="infocont">
+                <div class="devinfo">
+                    <div class="gre">Hi I am</div>
+                    <div class="name">MANOJ SANKOL S R</div>
+                    <div class="about">Student, student,</div>
+                    <div class="mabout">Lorem ipsum dolor sit amet consectetur adipisicing elit Fugiat harum nobis temporibus voluptatem quod laboriosam.</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".lab").hide()
+        let sbop=document.getElementById("sbop");
+        let sbw=document.getElementById("sb");
+        menu.innerHTML="menu";
+        sbop.onclick=function ()
+        {
+            
+
+            if(menu.innerHTML=="menu")
+            {
+                menu.innerHTML="close";
+                $(".sb").css("width","320px")
+                $(".lab").show()
+
+            }
+            else if(menu.innerHTML=="close")
+            {
+                menu.innerHTML="menu";
+                $(".sb").css("width","80px")
+                $(".lab").hide()
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
